@@ -136,7 +136,7 @@ textarea {
 .gallery-item {
   width: 360px;
   height: 200px;
-  border-width: 0px 1px 1px 1px;
+  border: 1px solid #808080;
   border-style: solid;
   border-color: #808080;
   overflow: hidden;
@@ -164,7 +164,6 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 32px 0;
   width: 100%;
 }
