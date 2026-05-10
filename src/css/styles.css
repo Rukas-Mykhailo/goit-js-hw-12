@@ -22,12 +22,10 @@
   width: 272px;
   height: 40px;
   padding: 0 16px;
-
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-
   outline: none;
 }
 
@@ -35,7 +33,6 @@ textarea {
   padding: 16px;
   border: 1px solid #808080;
   border-radius: 4px;
-
   background-color: none;
 }
 
@@ -45,7 +42,6 @@ textarea {
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
-
   width: 91px;
   height: 40px;
   cursor: pointer;
@@ -58,6 +54,7 @@ textarea {
 .search-input:hover {
   border-color: #000000;
 }
+
 .search-input:focus {
   border-color: #4e75ff;
 }
@@ -161,6 +158,42 @@ textarea {
   min-height: 150px;
   object-fit: cover;
   display: block;
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 32px 0;
+  width: 100%;
+}
+
+.load-more {
+  display: none;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.load-more:hover,
+.load-more:focus {
+  background-color: #6c8cff;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .info {
